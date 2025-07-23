@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,7 +7,7 @@
     <title>Gestión de Documentos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/portal.css">
+    <link rel="stylesheet" href="./public/css/style">
 </head>
 
 <body>
@@ -50,32 +49,28 @@
                 </select> </div>
             <div class="text-start mt-4 "> <button type="button" class="btn btn-primary">Buscar</button> </div>
             <div>
-                <h3 class="text-center mt-3">Agregar Archivo</h3>
-                <p class="mt-3">Agrega el archivo correspondiente, tamaño máximo.</p> <!-- Nav tabs -->
+                <h3 class="text-center mt-3">Gestionar Archivos</h3>
+                <p class="mt-3">Utiliza las pestañas para cargar un archivo Excel o descargar un archivo PDF.</p>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation"> <button class="nav-link active" id="pdf-tab"
+                    <li class="nav-item" role="presentation"> <button class="nav-link active" id="excel-tab"
+                            data-bs-toggle="tab" data-bs-target="#excel" type="button" role="tab"
+                            aria-controls="excel" aria-selected="true">Cargar Excel</button> </li>
+                    <li class="nav-item" role="presentation"> <button class="nav-link" id="pdf-tab"
                             data-bs-toggle="tab" data-bs-target="#pdf" type="button" role="tab" aria-controls="pdf"
-                            aria-selected="true">PDF</button> </li>
-                    <li class="nav-item" role="presentation"> <button class="nav-link" id="excel-tab"
-                            data-bs-toggle="tab" data-bs-target="#excel" type="button" role="tab" aria-controls="excel"
-                            aria-selected="false">Excel</button> </li>
-                </ul> <!-- Tab panes -->
+                            aria-selected="false">Descargar PDF</button> </li>
+                </ul>
                 <div class="tab-content p-3 border border-top-0">
-                    <div class="tab-pane fade show active" id="pdf" role="tabpanel" aria-labelledby="pdf-tab">
-                        <form>
-                            <div class="mb-3"> <label for="formFilePdf" class="form-label">Seleccionar archivo
-                                    PDF</label> <input class="form-control" type="file" id="formFilePdf"
-                                    accept="application/pdf"> </div> <button type="submit" class="btn btn-success">Subir
-                                PDF</button>
-                        </form>
-                    </div>
-                    <div class="tab-pane fade" id="excel" role="tabpanel" aria-labelledby="excel-tab">
+                    <div class="tab-pane fade show active" id="excel" role="tabpanel" aria-labelledby="excel-tab">
                         <form>
                             <div class="mb-3"> <label for="formFileExcel" class="form-label">Seleccionar archivo
-                                    Excel</label> <input class="form-control" type="file" id="formFileExcel"
-                                    accept=".xlsx,.xls"> </div> <button type="submit" class="btn btn-success">Subir
-                                Excel</button>
+                                        Excel para subir</label> <input class="form-control" type="file"
+                                    id="formFileExcel" accept=".xlsx,.xls"> </div> <button type="submit"
+                                class="btn btn-success">Subir Excel</button>
                         </form>
+                    </div>
+                    <div class="tab-pane fade" id="pdf" role="tabpanel" aria-labelledby="pdf-tab">
+                        <p>Haz clic para descargar el archivo PDF.</p>
+                        <a href="ruta/a/tu/archivo.pdf" download class="btn btn-primary">Descargar PDF</a>
                     </div>
                 </div>
             </div>
