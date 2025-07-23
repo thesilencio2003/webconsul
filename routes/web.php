@@ -11,6 +11,7 @@ Route::get('/empresa', function () {
     return view('login-usuario/index');
 });
 
+///ejemplo
 
 
 Route::get('/documentos', [DocumentoController::class, 'index'])->name('documentos.index');
