@@ -13,6 +13,10 @@ Route::get('/empresa', function () {
 
 ///ejemplo
 
+Route::get('/docdesc', function () {
+    return view('usuario-dash/index');
+} );
+
 
 Route::get('/documentos', [DocumentoController::class, 'index'])->name('documentos.index');
 

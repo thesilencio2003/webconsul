@@ -18,10 +18,10 @@
                     class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown me-4"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                    <li class="nav-item dropdown me-4"> <a class="nav-link dropdown-toggle" href="" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false"> Dropdown link </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="index.html">Cerrar Session</a></li>
+                            <li><a class="dropdown-item" href="/empresa">Cerrar Session</a></li>
                         </ul>
                     </li>
                 </ul>

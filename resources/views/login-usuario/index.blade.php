@@ -29,7 +29,7 @@
                             <label for="password" class="form-label">CONTRASEÑA</label>
                             <input type="password" class="form-control f2" id="password" placeholder="Contraseña">
                         </div>
-                        <a href="portal-usuario.html" class="btn btn-primary w-100">Entrar</a>
+                        <a href="/docdesc" class="btn btn-primary w-100">Entrar</a>
                     </form>
                 </div>
             </div>
